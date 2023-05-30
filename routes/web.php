@@ -26,3 +26,26 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/archivos', function () {
+        return view('archivos');
+    })->name('archivos');
+});
+
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/estudiantes', function () {
+        return view('estudiantes');
+    })->name('estudiantes');
+});
+
+
