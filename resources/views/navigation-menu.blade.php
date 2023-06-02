@@ -16,11 +16,11 @@
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link href="{{ route('archivos') }}" :active="request()->routeIs('archivos')">
-                        {{ __('Archivos') }}
-                    </x-nav-link>
-                    <x-nav-link href="{{ route('estudiantes') }}" :active="request()->routeIs('estudiantes')">
-                        {{ __('Usuarios') }}
+                    <x-nav-link href="{{ route('proyectos') }}" :active="request()->routeIs('archivos')">
+                        {{ __('Proyectos') }}
+                    </x-nav-link> 
+                    <x-nav-link href="{{ route('usuarios') }}" :active="request()->routeIs('usuarios')">
+                        {{ __('Alumnos') }}
                     </x-nav-link>
                     
                 </div>

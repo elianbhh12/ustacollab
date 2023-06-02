@@ -20,6 +20,11 @@
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
             </div>
 
+            <div class="mt-4 border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">
+                <x-label for="semestre" value="{{ __('Semestre') }}" />
+                <x-input id="semestre" class="block mt-1 w-full" type="semestre" name="semestre" :value="old('semestre')" required autocomplete="username" />
+            </div>
+
             <div class="mt-4">
                 <x-label for="password" value="{{ __('Contraseña') }}" />
                 <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />

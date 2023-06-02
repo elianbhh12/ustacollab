@@ -14,10 +14,12 @@ return new class extends Migration
         Schema::create('proyectos', function (Blueprint $table) {
             $table->id();
             $table->string('titulo');
-            $table->string('archivo');
-            $table->timestamp('fecha')->nullable();
-            $table->unsignedInteger('user_id');
+            $table->string('descripcion');
+            $table->string('file');
+            
             $table->timestamps();
+
+            
         });
     }
 
